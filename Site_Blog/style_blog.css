@@ -1,0 +1,326 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Quicksand', sans-serif;
+}
+h1{
+	line-height: 1.1; /*espaçamento entre uma linha e outra*/
+	font-weight: 300;
+	font-size: 150px;
+	color: #00FFFf;
+}
+h3{
+	text-align: center;
+	align-items: center;
+	text-decoration: none;
+}
+h3 a {
+	text-decoration: none;
+	box-shadow: 0px 0px 25px -6px black;
+}
+h3 a:hover{
+	color: black;
+}
+.btn.entrar{
+	height: 40px;
+	width: 120px;
+	box-shadow: 0px 0px 25px -6px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #00BFFF;
+	transition-property: background, color;
+	transition-duration: .30s;
+}
+.btn.entrar:hover{
+	background: #00FFFF;
+	color: #000000;
+}
+
+#secundaria h2{
+	text-align: center; /*Centraliza o texto*/
+	font-size: 30px; /*tamanho da fonte*/
+}
+#terciaria h2{
+	text-align: center;
+	font-size: 30px;
+}
+#quartenaria h2{
+	text-align: center;
+	font-size: 30px;
+}
+#principal{
+	display: flex; /*transfomrma em itens filhos, para redimensionar na  pagina*/
+	flex-direction: column; /*Define de coomo os itens serão apresentados*/
+	background: url("img/arranha_ceu.png"); /*Define a imagem de fundo e não deixa repetirs*/
+	background-attachment: fixed;
+	background-size: cover;/*A palavra cover- chave redimensionará a imagem de plano de fundo para garantir que o elemento esteja totalmente coberto .*/
+	height: 70vh; /*Deixa a imagem da altura original*/
+	padding: 0 0px; /*Define a distancia somente horizontalmente da borda*/
+	margin: 0px;
+}
+#principal nav{
+	display: flex;
+	align-items: center; /*Define o alinhamento do bloco que o contem*/
+	height: 50px;/*Define a altura do item, levando em consideração o border, padding etc*/
+	user-select: none;/*controla o conteúdo do site, não podendo ser selecionado*/
+	background: #4682B4;
+
+	
+}
+#principal nav img{
+	height: 100px; /*Altura do item*/
+	width: 100px; /*Largura do item*/
+	margin-left: 20px; /*Margemd a esquerda da imagem*/
+
+
+
+}
+#principal nav ul{
+	flex-grow: 1;/*Define o tamanho de cada item do menu, tornando cada um do mesmo tamanho ou não*/
+	display: flex; /*Deixa o menu em uma unica linha*/
+	align-items: center; /*IAs caixas de margem dos itens flex são centralizados ao longo da linha do eixo. Caso o tamanho de um item seja superior ao container flex, irá transbordar de maneira igual em ambas direções.*/
+	justify-content: flex-end;/* Alinha os itens no canto direito do container.*/
+	margin-right: 20px; /*Margem da direita da ul*/
+}
+#principal nav ul li{
+	margin: 0 20px; /*Define a distancia horizontal de cada item do menu*/
+	list-style-type: none;
+}
+#principal nav ul li: last-child{
+	margin-right: 0px;/*Defina a margem direita para um elemento, no caso aqui é o ultimo item*/
+}
+#principal nav ul li a{
+	text-decoration: none; /*Tira o estilo do texto*/
+	font-family: 'Oswald', sans-serif; /*Fonte do texto*/
+	font-weight: 600; /*Define a quantidade de negrito*/
+	font-size: 13px; /*Define o tamnho do texto*/
+	text-transform: uppercase; /*Todas as letras em maiscúlo*/
+	color: #FFFFFF;
+	
+}
+#principal aside{
+	flex-grow:1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#principal aside {
+	margin: 100px 0 0px 50px;
+}
+#principal p{
+	font-size: 40px;
+	color: #000;
+}
+#principal nav ul li a:hover{
+	color: #000000;
+}
+
+#secundaria{
+	width: 1500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 70px;
+}
+#secundaria .cabecalho{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+#secundaria .cabecalho p {
+	font-size: 17px;
+}
+#secundaria .cabecalho h2 {
+	text-transform: uppercase;
+}
+#secundaria .cabecalho .linha1 {
+	margin: 30px 0px;
+	width: 200px;
+	height: 5px;
+	background-color: #fc6;	
+}
+#secundaria ul{
+	user-select: none;
+	display: flex;
+	justify-content: center;
+}
+#secundaria ul li{
+	width: 400px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 10px;
+}
+#secundaria ul li span{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500px;
+	font-size: 30px;
+	position: absolute;
+	max-width: 95%;
+	text-align: left;
+	margin-top: 100px;
+} 
+#secundaria ul li span a{
+	background: #ffffff;
+	color: #000000;
+	text-decoration: none;
+	box-shadow: 10px 5px 50px 0px black;
+}
+#secundaria ul li span a:hover{
+	color: #ffffff;
+	background: #000000;
+}
+#terciaria{
+	width: 1500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 70px;
+
+}
+#terciaria .cabecalho{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+#terciaria .cabecalho p {
+	font-size: 17px;
+}
+#terciaria .cabecalho h2 {
+	text-transform: uppercase;
+}
+#terciaria .cabecalho .linha2 {
+	margin: 30px 0px;
+	width: 200px;
+	height: 5px;
+	background-color: #fc6;	
+}
+#terciaria ul{
+	user-select: none;
+	display: flex;
+	justify-content: center;
+}
+#terciaria ul li{
+	width: 300px;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+#terciaria ul li span::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: calc(100% - 25px);
+	height: calc(100% - 25px);
+}
+#terciaria ul li:not(:first-child) {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+#terciaria ul li span{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500px;
+	font-size: 30px;
+	position: absolute;
+	max-width: 95%;
+	text-align: left;
+} 
+#terciaria ul li span a{
+	color: black;
+	text-decoration: none;
+	box-shadow: 10px 5px 50px 0px black;
+}
+#terciaria ul li span a:hover{
+	background: #ffffff;
+	color: #000000;
+}
+#terciaria ul li img {
+	display: flex;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -2;
+	transition: transform .25s;
+}
+#terciaria ul li:hover img{
+	transform: scale(1.25);
+}
+#quaternaria{
+	width: 1500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 70px;
+}
+#quaternaria .midias{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+#quaternaria .midias .linha3{
+	margin: 30px 0px;
+	width: 450px;
+	height: 5px;
+	background-color: #fc6;
+}
+#quaternaria ul{
+	display: flex;
+	justify-content: center;
+}
+#quaternaria ul li{
+	width: 80px;
+	height: 80px;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	flex-direction: column;
+	margin-left: 20px;
+}
+#quaternaria ul li img:hover{
+	border: 2px solid black;
+}
+#footer {
+	height: 250px;
+	background-color: #1C1C1C;
+	display: flex;
+	align-items: center;
+}
+#footer .dev{
+	margin-left: 15px;
+	color: #ffffff;
+}
+#footer .atalho{
+	margin-left: auto;
+	margin-right: auto;
+}
+#footer .atalho ul li{
+	list-style-type: none;
+	padding: 5px;
+}
+#footer .atalho ul li a{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 20px;
+}
+#footer .atalho ul li a:hover{
+	color: #836FFF;
+}
+#footer .endereco{
+	margin-right: 15px;
+	text-align: right;
+	padding: 5px;
+}
+#footer .endereco img {
+	padding: 5px;
+}
+#footer .endereco p{
+	color: #ffffff;
+}
