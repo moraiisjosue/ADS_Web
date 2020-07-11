@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulário</title>
+</head>
+<body>
+	<h1>
+		<h1> Cadastro </h1>
+		<p> Faça o seu cadastro no formulário abaixo:</p>
+
+		<form action="" method="post">
+			<fieldset>
+				<legend>Dados Pessoais</legend>
+
+				<label>Nome:<br/> <input type="text" name="nome" autofocus=""></label>
+
+				<br>
+				<label>Sexo:</label>
+				<input type="radio" name="sexo" value="Masculino">Masculino
+				<input type="radio" name="sexo" value="Feminino">Feminino
+
+				<br>
+
+				<label>CPF:</label>
+
+				<input type="text" name="cpf" required autocomplete=on>
+
+				<br>
+
+				<label>Endereço:<br/> <input type="endereco" name="endereco" placeholder="Avenida, rua, bloco..."></label>
+                                        
+				<br>
+
+				<label>Cidade:</label>
+
+				<input type="text" name="cidade">
+
+				<br>
+
+				<label>Estado</label>
+				<select name="estado">
+					<option value="Acre">Acre</option>
+					<option value="Amazonas">Amazonas</option>
+					<option value="Santa catarina">Santa Catarina</option>
+				</select>	
+
+				<br>
+
+				<label>Senha:</label>
+				<input type="password" name="senha">
+
+				<br>
+				<label>Observações:</label>
+
+				<textarea id="story" name="story" rows="5" cols="33"> </textarea>
+
+				<br>
+
+				<label>Concorda com os termos da página?</label><br>
+				<input type="checkbox" name="termo"<br>
+
+				<br>
+
+				</fieldset>
+
+				<input type="submit" value="ENVIAR">
+			
+		</form>
+	</h1>
+
+</body>
+</html>
