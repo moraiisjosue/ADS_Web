@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Exemplo Bootstrap</title>
+	<!--Bootstrap CSS (OBRIGATÓRIO!)-->
+	<link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="meucss.css">
+</head>
+<body>
+
+	<!--COMPONENTE: Navbar-->
+	<nav class="navbar navbar-expand-lg navbar-light backgorund bglite">
+		<a class="navbar-brand h1 mb-0" href="#"><img src="images/ifc.png" height="30" height="30" alt="logo IFC" class="d-inline-block align-top">IFC - Campus Fraiburgo</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#meuMenuSite">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="meuMenuSite">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Início</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Institucional</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Estude no IFC</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#">Ensino</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" id="meuSubMenu" data-toggle="dropdown">Pesquisa</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#"> Cursos</a>
+					<a class="dropdown-item" href="#"> Pós-graduação</a>
+					<a class="dropdown-item" href="#"> Fromas de ingresso</a>
+				</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Extensão</a>
+				</li>
+				
+			</ul>
+
+			<form class="form-inline">
+				<input class="form-control mr-2" type="search" placeholder="Procurar...">
+				<button class="btn btn-outline-sucess" type="submit">Procurar</button>
+			</form>
+		</div>
+	</nav>
+
+	<!--Compónente: carousel-->
+	<div id="meuCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#meuCarousel" data-slide-to="0" class="active"></li> 
+			<li data-target="#meuCarousel" data-slide-to="1"></li>
+			<li data-target="#meuCarousel" data-slide-to="2"></li>
+		<li data-target="#meuCarousel" data-slide-to="3"></li>	
+		</ol>
+		<div class="carousel-inner">
+		<div class="carousel-item active" data-interval="4000">
+			<img src="images/banner-1.png" class="d-block w-100" width="" height="" alt=""></div>
+		<div class="carousel-item" data-interval="4000">
+			<img src="images/banner-2.png" class="d-block w-100" width="" height="" alt=""></div>
+		<div class="carousel-item" data-interval="4000">
+			<img src="images/banner-3.png" class="d-block w-100" width="" height="" alt=""></div>
+			<div class="carousel-item" data-interval="4000">
+			<img src="images/banner-4.png" class="d-block w-100" width="" height="" alt=""></div>
+		</div>
+	
+		<a class="carousel-control-prev" href="#meuCarousel" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Anterior</span>
+		</a>
+		<a class="carousel-control-next" href="#meuCarousel" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Próximo</span>
+		</a>
+	</div>
+
+	<h1>Olá Mundo</h1>
+
+	<!--Layout GERAL: container responsivo de largura fixa-->
+	<div class="container-fluid">
+		<p>Isto é um container resposivo de largura fixa apenas</p>
+	</div>
+
+	<!--Layout GERAL:Container responsivo de largura fluída, largura 100%-->
+
+	<div class="container-fluid">
+		<p>Isto é um container responsivo de largura fluída, abrangendo toda area de visualização</p>
+	</div>
+
+	<!--Layout sistema de grid: três colunas com largura maior-->
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-3">
+				<p>Aqui vai isso</p>
+			</div>
+			<div class="col-6">
+				<p>Aqui vai aquilo</p>
+			</div>
+			<div class="col-3">
+				<p>Aqui vai jobileu</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Conteúdo Imagens: imagem responsiva -->
+
+	<div class="mx-auto text-center">
+		<img src="images/predio-ifc.jpg" width="800" height="400" alt="" class="img-fluid">
+	</div>
+
+	<!-- Conteúdo imagens: thumbmail borda arredondada de 1px-->
+	<img src="images/chope.png" widdt="" heigth="" alt="" class="img-thumbnail">
+
+<br><br>
+
+<!-- Conteúdo imagens: borda com cor-->
+<img src="images/chope.png" width="" heigth="" alt="" class="border border-primary">
+<img src="images/chope.png" width="" heigth="" alt="" class="border border-secondary">
+<img src="images/chope.png" width="" heigth="" alt="" class="border border-succss">
+
+<br><br>
+
+<!-- Conteúdos imagens: radio da borda -->
+<img src="images/chope.png" width="" height="" alt="" class="rounded"> 
+<img src="images/chope.png" width="" height="" alt="" class="rounded-top">
+<img src="images/chope.png" width="" height="" alt="" class="rounded-bottom">
+<img src="images/chope.png" width="" height="" alt="" class="rounded-circle">
+
+<br><br>
+
+<!-- Conteúdo figuras: Imagem e texto relacionado-->
+
+<div class="mx-auto text-center">
+	<figure class="figure">
+		<img src="images/chope.png" width="" height="" alt="" class="figure-img img-fluid">
+		<figcaption class="figure-caption">Uma legenda para a imagem acima</figcaption>
+	</figure>
+</div>
+
+<br><br>
+
+<!-- Componente botão-->
+<button type="button" class="btn btn-primary btn-sm">Primário</button>
+<button type="button" class="btn btn-secondary">Segundário</button>
+<button type="button" class="btn btn-success">Sucesso</button>
+<button type="button" class="btn btn-danger">Perigo</button>
+<button type="button" class="btn btn-warning">Atenção</button>
+<button type="button" class="btn btn-info">Informação</button>
+<button type="button" class="btn btn-link">Link</button>
+
+<br><br>
+
+<!-- Componente Cards: Container de conteúdo flexível e estensível-->
+<div class="card" style="width: 20rem;">
+	<img src="images/idoso.png" width="" height="" alt="" class="card-img-top"  >
+	<div class="card-body">
+		<h5 class="card-title">Título do card</h5>
+		<p class="card-text">Aqui você coloca o texto desde card e bla bla bla bla</p>
+		<a href="#" class="btn btn-primary">Leia mais</a>/
+	</div>
+</div>
+
+<br><br>
+
+<!-- Componente breadcrump: Localização da página atual em um hierarquia de navegação-->
+<nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item">início</li>
+		<li class="breadcrumb-item">Notícias</li>
+		<li class="breadcrumb-item" aria-current="page"> Esporte</li>
+		
+
+	</ol>
+</nav>
+
+
+
+
+
+
+	<!-- javaScript para os componentes funcionarem
+		1-jQuery
+		2-Pooper.js
+		3-Bootstrap.js
+	-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

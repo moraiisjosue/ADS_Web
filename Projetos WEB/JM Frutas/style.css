@@ -1,0 +1,234 @@
+
+.bg-light{
+    background-color: #696969 !important;
+}
+.card-principal{
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'Fredoka One', cursive;
+}
+p{
+    color: #444339;
+    font-family: 'Fresca', sans-serif;
+    font-size: 19px
+}
+h1{
+    font-family: 'Fredoka One', cursive;
+}
+a{
+    text-decoration: none;
+    font-family: 'Fresca', sans-serif;
+    color: #444339;
+
+}
+.capa-maca{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: url('img/capa_maca.jpg') no-repeat;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: local;
+}
+.capa-maca .texto{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+    color: #696969;
+    font-family: 'Fredoka One', cursive;
+}    
+.capa-maca .texto h1{
+    font-size: 100px;
+}
+.capa-maca .texto p{
+    font-size: 50px; 
+    color: #696969;
+}
+@media(max-width: 1000px){
+    .capa-maca .texto h1{
+        font-size: 80px;
+    }
+    .capa-maca .texto p{
+        font-size: 40px;
+    }
+}
+@media(max-width: 750px){
+    .capa-maca .texto h1{
+        font-size: 90px;
+    }
+    .capa-maca .texto p{
+        font-size: 30px;
+    }
+}
+
+.secundaria > div {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.tercearia{
+    background: url('img/capa_maca2.jpg') no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tercearia > div.historia{
+    display: grid;
+    grid-column: 1; 
+    margin: 0 auto;
+    text-align: center;
+    height: 500px;
+    max-width: 1000px;
+    align-items: center;
+    padding: 50px;
+}
+.tercearia > div.historia h1 {
+    color: #696969;
+    max-width: 800px;
+}
+.tercearia > div.historia p {
+    font-size: 19px;;
+    color: #27274d;
+    max-width: 1000px;
+}
+@media(max-width: 700px){
+    .tercearia > div.historia{
+        height: 700px;
+    }
+}
+@media(max-width: 500px){
+    .tercearia > div.historia{
+        height: 900px;
+    }
+}
+
+.container{
+    padding: 30px;
+    max-width: 1500px;
+    font-family: 'Fredoka One', cursive;
+}
+#teste{
+    padding: 0 0 200px 0;
+}
+/*Butão*/
+.medio{
+    width: 10%;
+}
+.teste1{
+    background: url('img/capa_maca2.jpg') no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.newsletter{
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 50px 10px 50px 10px;
+    text-align: center;
+} 
+.form-control{
+    max-width: 500px;
+}
+#footer {
+	height: 250px;
+	background-color: #47474d;
+	display: flex;
+    align-items: center;
+}
+#footer .dev{
+	margin-left: 15px;
+    color: #ffffff;
+    font-family: 'Fredoka One', cursive;
+}
+#footer .sub-menu{
+	margin-left: auto;
+    margin-right: auto;
+    font-family: 'Fredoka One', cursive;
+}
+#footer .sub-menu ul li{
+	list-style-type: none;
+	padding: 5px;
+}
+#footer .sub-menu .nav a{
+	color: #f3cf9f;
+	text-decoration: none;
+	font-size: 18px;
+}
+#footer .sub-menu .nav ul li a:hover{
+	color: #FFF;
+}
+#footer .endereco{
+	margin-right: 15px;
+	text-align: right;
+	padding: 2px;
+}
+#footer .endereco img {
+	padding: 2px;
+}
+#footer .endereco p{
+    color: #ffffff;
+    font-family: 'Fredoka One', cursive;
+}
+@media(max-width: 920px){
+    #footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 600px;
+    }
+    #footer .dev{
+        margin: 0 auto;
+    }
+    #footer .endereco{
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
+    #footer .endereco img{
+        margin: 0 auto;
+    }
+}
+/*página sobre nós*/
+.row{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0 40px 0;
+    font-family: 'Fredoka One', cursive;
+}
+.row  p{
+    padding-bottom: 20px;
+}
+.row  img{
+    padding-bottom: 20px;
+}
+@media(max-width: 900px){
+    .row{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/*página formulario*/
+.formulario{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 200px 0 200px 0;
+    font-family: 'Fredoka One', cursive;
+}
+.local{
+    max-width: 280px;
+    margin: 0 auto;
+}
+.local nav a{
+    list-style-type: none;
+}
+
+
+    

@@ -1,0 +1,219 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+h1{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 75px;
+	line-height: 1;
+
+}
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	line-height: 1.25;
+
+}
+
+#segundaria h1 {
+	text-align: center;
+}
+
+
+ul{
+	
+	list-style-type: none;
+}
+.btn {
+	user-select: none;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	height: 58px;
+	width: 200px;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition-property: background, color;
+	transition-duration: .25s;
+}
+.btn.principal{
+	background: #fc6;
+	color: #000;
+}
+.btn.principal:hover{
+	background: #c60;
+	color: #ff9;
+}
+.btn.secundario{
+	border: 1px solid #000;
+	background: rgba(0, 0, 0, .15);
+
+}
+.btn.secundario:hover{
+	background: rgba(0, 0, 0, .30);
+}
+#principal{
+	display: flex;
+	flex-direction: column;
+	background: url("images/capa.jpg") no-repeat; /*Define a imagem de fundo e não deixa repetirs*/
+	background-size: cover;
+	height: 100vh;
+	padding: 0px 50px;
+}
+#principal nav{
+	display: flex;
+	align-items: center;
+	height: 100px;
+	user-select: none; 
+}
+#principal nav img{
+	width: 50px;
+	height: 50px;
+
+}
+#principal nav ul{
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+#principal nav ul li{
+	margin: 0 25px;
+}
+#principal nav ul li: last-child{
+	margin-right: 0;
+}
+#principal nav ul li a {
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300px;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #fc6;
+	
+}
+#principal nav ul li a:hover, #secundaria nav ul li a.active{
+	color: #ff6;
+} 
+#principal aside{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#principal aside p{
+	margin: 40px 0 80px 0;
+}
+
+#secundaria {
+	width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 150px 0;
+
+}
+#secundaria .cabecalho{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+}
+#secundaria .cabecalho h1{
+	text-transform: uppercase;
+
+}
+#secundaria .cabecalho p{
+	margin-top: 50px;
+}
+#secundaria .cabecalho .linha {
+	margin: 50px 0;
+	height: 10px;
+	width: 100px;
+	background-color: #fc6;
+}
+#secundaria ul{
+	user-select: none;
+	display: flex;
+	justify-content: center;
+
+}
+#secundaria ul li{
+	width: 500px;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+#secundaria ul li::after{
+	content: '';
+	display: block;
+	position: absolute;
+	width: calc(100% - 25px);
+	height: calc(100% - 25px);
+
+}
+#secundaria ul li: not(:first-child) {
+	margin-left: 75px;
+}
+#secundaria ul li span {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 60px;
+	color: #fff;
+	align-items: center;
+	text-align: center;
+	max-width: 70%;
+
+}
+#secundaria ul li img{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 3px;
+	z-index: -1;
+	transition: .24s;
+
+}
+#secundaria ul li: hover {
+	cursor: pointer;
+
+}
+#secundaria ul li: hover img{
+	transform: scale(1.25);
+}
+#secundaria ul li: nth-child(1) img{
+	left: -105%;
+
+}
+#secundaria ul li: nth-child(2) img{
+	left: -25%;
+	
+}
+#secundaria ul li: nth-child(3) img{
+	left: -40%;
+	
+}
+footer {
+	height: 100px;
+	padding: 0 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #000;
+
+}
+footer span{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size 16px;
+	color: #fff;
+}
